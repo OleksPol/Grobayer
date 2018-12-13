@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A800C08F21C297F800793008 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C08E21C297F700793008 /* DataService.swift */; };
+		A800C09121C2A73F00793008 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09021C2A73F00793008 /* AuthVC.swift */; };
+		A800C09321C2A75000793008 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09221C2A75000793008 /* LoginVC.swift */; };
+		A800C09521C2A7C800793008 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09421C2A7C800793008 /* InsetTextField.swift */; };
 		A84FB94A21C2923F007F4476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94921C2923F007F4476 /* AppDelegate.swift */; };
 		A84FB94C21C2923F007F4476 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94B21C2923F007F4476 /* FirstViewController.swift */; };
 		A84FB94E21C2923F007F4476 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94D21C2923F007F4476 /* SecondViewController.swift */; };
 		A84FB95121C2923F007F4476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FB94F21C2923F007F4476 /* Main.storyboard */; };
 		A84FB95321C29240007F4476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84FB95221C29240007F4476 /* Assets.xcassets */; };
 		A84FB95621C29240007F4476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FB95421C29240007F4476 /* LaunchScreen.storyboard */; };
+		A84FB96521C29533007F4476 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84FB96421C29533007F4476 /* GoogleService-Info.plist */; };
+		C206BD50F28F8C7215607FB3 /* Pods_Grobayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03BE36BC2DF73F381734AE2B /* Pods-Grobayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grobayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grobayer/Pods-Grobayer.release.xcconfig"; sourceTree = "<group>"; };
+		5E575BF0FD03F12F0E53A7DC /* Pods-Grobayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grobayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grobayer/Pods-Grobayer.debug.xcconfig"; sourceTree = "<group>"; };
+		A800C08E21C297F700793008 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A800C09021C2A73F00793008 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		A800C09221C2A75000793008 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A800C09421C2A7C800793008 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		A84FB94621C2923F007F4476 /* Grobayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grobayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FB94921C2923F007F4476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84FB94B21C2923F007F4476 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +36,8 @@
 		A84FB95221C29240007F4476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A84FB95521C29240007F4476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A84FB95721C29240007F4476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84FB96421C29533007F4476 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grobayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C206BD50F28F8C7215607FB3 /* Pods_Grobayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D6634E49C25265CA2B0141 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E575BF0FD03F12F0E53A7DC /* Pods-Grobayer.debug.xcconfig */,
+				03BE36BC2DF73F381734AE2B /* Pods-Grobayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		82F5E2CCEB91903E93069957 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A84FB93D21C2923F007F4476 = {
 			isa = PBXGroup;
 			children = (
 				A84FB94821C2923F007F4476 /* Grobayer */,
 				A84FB94721C2923F007F4476 /* Products */,
+				27D6634E49C25265CA2B0141 /* Pods */,
+				82F5E2CCEB91903E93069957 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +90,76 @@
 		A84FB94821C2923F007F4476 /* Grobayer */ = {
 			isa = PBXGroup;
 			children = (
-				A84FB94921C2923F007F4476 /* AppDelegate.swift */,
-				A84FB94B21C2923F007F4476 /* FirstViewController.swift */,
-				A84FB94D21C2923F007F4476 /* SecondViewController.swift */,
-				A84FB94F21C2923F007F4476 /* Main.storyboard */,
+				A84FB96321C29442007F4476 /* Storyboards */,
+				A84FB96221C29430007F4476 /* Services */,
+				A84FB96121C293FE007F4476 /* Extensions */,
+				A84FB96021C293C4007F4476 /* Delegates */,
+				A84FB95F21C293B2007F4476 /* Model */,
+				A84FB95E21C293AD007F4476 /* View */,
+				A84FB95D21C293A4007F4476 /* Controller */,
 				A84FB95221C29240007F4476 /* Assets.xcassets */,
-				A84FB95421C29240007F4476 /* LaunchScreen.storyboard */,
 				A84FB95721C29240007F4476 /* Info.plist */,
+				A84FB96421C29533007F4476 /* GoogleService-Info.plist */,
 			);
 			path = Grobayer;
+			sourceTree = "<group>";
+		};
+		A84FB95D21C293A4007F4476 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A84FB94B21C2923F007F4476 /* FirstViewController.swift */,
+				A84FB94D21C2923F007F4476 /* SecondViewController.swift */,
+				A800C09021C2A73F00793008 /* AuthVC.swift */,
+				A800C09221C2A75000793008 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A84FB95E21C293AD007F4476 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A800C09421C2A7C800793008 /* InsetTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A84FB95F21C293B2007F4476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A84FB96021C293C4007F4476 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A84FB94921C2923F007F4476 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		A84FB96121C293FE007F4476 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A84FB96221C29430007F4476 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A800C08E21C297F700793008 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A84FB96321C29442007F4476 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A84FB94F21C2923F007F4476 /* Main.storyboard */,
+				A84FB95421C29240007F4476 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A84FB95A21C29240007F4476 /* Build configuration list for PBXNativeTarget "Grobayer" */;
 			buildPhases = (
+				F4365B62DF6FA8FA5D18A658 /* [CP] Check Pods Manifest.lock */,
 				A84FB94221C2923F007F4476 /* Sources */,
 				A84FB94321C2923F007F4476 /* Frameworks */,
 				A84FB94421C2923F007F4476 /* Resources */,
+				427F82B8550052BA1DE1B3CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84FB95621C29240007F4476 /* LaunchScreen.storyboard in Resources */,
+				A84FB96521C29533007F4476 /* GoogleService-Info.plist in Resources */,
 				A84FB95321C29240007F4476 /* Assets.xcassets in Resources */,
 				A84FB95121C2923F007F4476 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +231,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		427F82B8550052BA1DE1B3CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Grobayer/Pods-Grobayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grobayer/Pods-Grobayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4365B62DF6FA8FA5D18A658 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Grobayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A84FB94221C2923F007F4476 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A800C09121C2A73F00793008 /* AuthVC.swift in Sources */,
+				A800C09321C2A75000793008 /* LoginVC.swift in Sources */,
 				A84FB94E21C2923F007F4476 /* SecondViewController.swift in Sources */,
 				A84FB94A21C2923F007F4476 /* AppDelegate.swift in Sources */,
 				A84FB94C21C2923F007F4476 /* FirstViewController.swift in Sources */,
+				A800C09521C2A7C800793008 /* InsetTextField.swift in Sources */,
+				A800C08F21C297F800793008 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +439,7 @@
 		};
 		A84FB95B21C29240007F4476 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E575BF0FD03F12F0E53A7DC /* Pods-Grobayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +458,7 @@
 		};
 		A84FB95C21C29240007F4476 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03BE36BC2DF73F381734AE2B /* Pods-Grobayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
