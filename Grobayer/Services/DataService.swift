@@ -24,7 +24,7 @@ class DataService {
     var REF_GROUP: DatabaseReference { return _REF_GROUP }
     var REF_FEED: DatabaseReference { return _REG_FEED }
     
-    func createUserFromDB(uid: String, userData: Dictionary<String,Any>) {
+    func createDBUser(uid: String, userData: Dictionary<String,Any>) {
         REF_USERS.child(uid).updateChildValues(userData)
         
     }

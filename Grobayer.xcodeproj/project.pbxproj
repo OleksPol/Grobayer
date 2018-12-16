@@ -11,6 +11,8 @@
 		A800C09121C2A73F00793008 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09021C2A73F00793008 /* AuthVC.swift */; };
 		A800C09321C2A75000793008 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09221C2A75000793008 /* LoginVC.swift */; };
 		A800C09521C2A7C800793008 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09421C2A7C800793008 /* InsetTextField.swift */; };
+		A800C09721C6A1F400793008 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09621C6A1F400793008 /* ShadowView.swift */; };
+		A800C09921C6A36900793008 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09821C6A36900793008 /* AuthService.swift */; };
 		A84FB94A21C2923F007F4476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94921C2923F007F4476 /* AppDelegate.swift */; };
 		A84FB94C21C2923F007F4476 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94B21C2923F007F4476 /* FirstViewController.swift */; };
 		A84FB94E21C2923F007F4476 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94D21C2923F007F4476 /* SecondViewController.swift */; };
@@ -28,6 +30,8 @@
 		A800C09021C2A73F00793008 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		A800C09221C2A75000793008 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A800C09421C2A7C800793008 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		A800C09621C6A1F400793008 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		A800C09821C6A36900793008 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A84FB94621C2923F007F4476 /* Grobayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grobayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FB94921C2923F007F4476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84FB94B21C2923F007F4476 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				A800C09421C2A7C800793008 /* InsetTextField.swift */,
+				A800C09621C6A1F400793008 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				A800C08E21C297F700793008 /* DataService.swift */,
+				A800C09821C6A36900793008 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,7 +298,9 @@
 				A800C09121C2A73F00793008 /* AuthVC.swift in Sources */,
 				A800C09321C2A75000793008 /* LoginVC.swift in Sources */,
 				A84FB94E21C2923F007F4476 /* SecondViewController.swift in Sources */,
+				A800C09921C6A36900793008 /* AuthService.swift in Sources */,
 				A84FB94A21C2923F007F4476 /* AppDelegate.swift in Sources */,
+				A800C09721C6A1F400793008 /* ShadowView.swift in Sources */,
 				A84FB94C21C2923F007F4476 /* FirstViewController.swift in Sources */,
 				A800C09521C2A7C800793008 /* InsetTextField.swift in Sources */,
 				A800C08F21C297F800793008 /* DataService.swift in Sources */,
