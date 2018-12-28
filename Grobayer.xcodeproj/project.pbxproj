@@ -20,6 +20,7 @@
 		A84FB95321C29240007F4476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84FB95221C29240007F4476 /* Assets.xcassets */; };
 		A84FB95621C29240007F4476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FB95421C29240007F4476 /* LaunchScreen.storyboard */; };
 		A84FB96521C29533007F4476 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A84FB96421C29533007F4476 /* GoogleService-Info.plist */; };
+		A8A1E07F21D6631000CA3C08 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A1E07E21D6631000CA3C08 /* MeVC.swift */; };
 		C206BD50F28F8C7215607FB3 /* Pods_Grobayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		A84FB95521C29240007F4476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A84FB95721C29240007F4476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A84FB96421C29533007F4476 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A8A1E07E21D6631000CA3C08 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grobayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				A84FB94D21C2923F007F4476 /* GroupVC.swift */,
 				A800C09021C2A73F00793008 /* AuthVC.swift */,
 				A800C09221C2A75000793008 /* LoginVC.swift */,
+				A8A1E07E21D6631000CA3C08 /* MeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A1E07F21D6631000CA3C08 /* MeVC.swift in Sources */,
 				A800C09121C2A73F00793008 /* AuthVC.swift in Sources */,
 				A800C09321C2A75000793008 /* LoginVC.swift in Sources */,
 				A84FB94E21C2923F007F4476 /* GroupVC.swift in Sources */,
