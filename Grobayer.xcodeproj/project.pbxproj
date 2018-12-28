@@ -14,8 +14,8 @@
 		A800C09721C6A1F400793008 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09621C6A1F400793008 /* ShadowView.swift */; };
 		A800C09921C6A36900793008 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A800C09821C6A36900793008 /* AuthService.swift */; };
 		A84FB94A21C2923F007F4476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94921C2923F007F4476 /* AppDelegate.swift */; };
-		A84FB94C21C2923F007F4476 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94B21C2923F007F4476 /* FirstViewController.swift */; };
-		A84FB94E21C2923F007F4476 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94D21C2923F007F4476 /* SecondViewController.swift */; };
+		A84FB94C21C2923F007F4476 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94B21C2923F007F4476 /* FeedVC.swift */; };
+		A84FB94E21C2923F007F4476 /* GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84FB94D21C2923F007F4476 /* GroupVC.swift */; };
 		A84FB95121C2923F007F4476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FB94F21C2923F007F4476 /* Main.storyboard */; };
 		A84FB95321C29240007F4476 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84FB95221C29240007F4476 /* Assets.xcassets */; };
 		A84FB95621C29240007F4476 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84FB95421C29240007F4476 /* LaunchScreen.storyboard */; };
@@ -34,8 +34,8 @@
 		A800C09821C6A36900793008 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A84FB94621C2923F007F4476 /* Grobayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grobayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84FB94921C2923F007F4476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A84FB94B21C2923F007F4476 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A84FB94D21C2923F007F4476 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A84FB94B21C2923F007F4476 /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		A84FB94D21C2923F007F4476 /* GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVC.swift; sourceTree = "<group>"; };
 		A84FB95021C2923F007F4476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A84FB95221C29240007F4476 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A84FB95521C29240007F4476 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,8 +111,8 @@
 		A84FB95D21C293A4007F4476 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A84FB94B21C2923F007F4476 /* FirstViewController.swift */,
-				A84FB94D21C2923F007F4476 /* SecondViewController.swift */,
+				A84FB94B21C2923F007F4476 /* FeedVC.swift */,
+				A84FB94D21C2923F007F4476 /* GroupVC.swift */,
 				A800C09021C2A73F00793008 /* AuthVC.swift */,
 				A800C09221C2A75000793008 /* LoginVC.swift */,
 			);
@@ -297,11 +297,11 @@
 			files = (
 				A800C09121C2A73F00793008 /* AuthVC.swift in Sources */,
 				A800C09321C2A75000793008 /* LoginVC.swift in Sources */,
-				A84FB94E21C2923F007F4476 /* SecondViewController.swift in Sources */,
+				A84FB94E21C2923F007F4476 /* GroupVC.swift in Sources */,
 				A800C09921C6A36900793008 /* AuthService.swift in Sources */,
 				A84FB94A21C2923F007F4476 /* AppDelegate.swift in Sources */,
 				A800C09721C6A1F400793008 /* ShadowView.swift in Sources */,
-				A84FB94C21C2923F007F4476 /* FirstViewController.swift in Sources */,
+				A84FB94C21C2923F007F4476 /* FeedVC.swift in Sources */,
 				A800C09521C2A7C800793008 /* InsetTextField.swift in Sources */,
 				A800C08F21C297F800793008 /* DataService.swift in Sources */,
 			);
