@@ -56,13 +56,56 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="O06-oF-Kin">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="100" id="O06-oF-Kin" customClass="FeedCell" customModule="Grobayer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O06-oF-Kin" id="i1C-bE-hV2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="qXo-gW-YUW">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Jt8-y9-4EN"/>
+                                                        <constraint firstAttribute="height" constant="50" id="P1G-RH-IOH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f9v-tu-0wJ">
+                                                    <rect key="frame" x="70" y="21" width="280" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@mail.ru" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrV-6F-or7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="280" height="28"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message content" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="nN5-Hb-hAE">
+                                                            <rect key="frame" x="0.0" y="33" width="280" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="25" id="HxH-Gu-8cz"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f9v-tu-0wJ" firstAttribute="top" secondItem="i1C-bE-hV2" secondAttribute="topMargin" constant="10" id="CJA-KT-UTO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="f9v-tu-0wJ" secondAttribute="trailing" constant="10" id="Cp7-cX-rh7"/>
+                                                <constraint firstItem="qXo-gW-YUW" firstAttribute="leading" secondItem="i1C-bE-hV2" secondAttribute="leading" constant="10" id="EFe-33-6OQ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="f9v-tu-0wJ" secondAttribute="bottom" constant="10" id="eO7-3d-Nva"/>
+                                                <constraint firstItem="f9v-tu-0wJ" firstAttribute="leading" secondItem="qXo-gW-YUW" secondAttribute="trailing" constant="10" id="jwT-6K-tyZ"/>
+                                                <constraint firstItem="qXo-gW-YUW" firstAttribute="top" secondItem="i1C-bE-hV2" secondAttribute="top" constant="10" id="r7y-FO-t4F"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.16078431372549018" green="0.15686274509803921" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="contentLbl" destination="nN5-Hb-hAE" id="NHm-YG-NBg"/>
+                                            <outlet property="emailLbl" destination="xrV-6F-or7" id="KMg-4h-tnL"/>
+                                            <outlet property="profileImage" destination="qXo-gW-YUW" id="5e4-8Y-wpQ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -80,6 +123,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="feed-tabIcon" selectedImage="feed-tabIcon" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="mH6-sl-5pC" id="2ps-eK-Nk0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +173,7 @@
                                     <constraint firstItem="F2W-Di-6ed" firstAttribute="leading" secondItem="IGd-Lf-fJo" secondAttribute="leading" constant="20" id="uq0-NX-y6G"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="13h-n4-fbT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="13h-n4-fbT">
                                 <rect key="frame" x="20" y="90" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="30C-Ml-QAu"/>
@@ -268,7 +314,7 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="E3u-he-OMg">
             <objects>
                 <viewController id="Dd4-Wq-7lm" customClass="MeVC" customModule="Grobayer" customModuleProvider="target" sceneMemberID="viewController">
@@ -370,7 +416,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yOo-01-9dh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="me-tabIcon" selectedImage="me-tabIcon" id="0FQ-9j-9qH"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="me-tabIcon" selectedImage="me-tabIcon" id="0FQ-9j-9qH"/>
                     <connections>
                         <outlet property="emailLbl" destination="nLz-XO-Taw" id="hyP-9Z-G9C"/>
                         <outlet property="profileImage" destination="Su0-au-GZI" id="ZVd-0S-20o"/>
