@@ -23,6 +23,8 @@
 		A88DC58021D8F7B000F5412B /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC57F21D8F7B000F5412B /* UIViewExt.swift */; };
 		A88DC58221D8FD7700F5412B /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC58121D8FD7700F5412B /* FeedCell.swift */; };
 		A88DC58421D9015A00F5412B /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC58321D9015A00F5412B /* Message.swift */; };
+		A88DC58621D913CD00F5412B /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC58521D913CD00F5412B /* CreateGroupVC.swift */; };
+		A88DC58821D918A500F5412B /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC58721D918A500F5412B /* UserCell.swift */; };
 		A8A1E07F21D6631000CA3C08 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A1E07E21D6631000CA3C08 /* MeVC.swift */; };
 		A8A1E08121D667AE00CA3C08 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A1E08021D667AE00CA3C08 /* CreatePostVC.swift */; };
 		C206BD50F28F8C7215607FB3 /* Pods_Grobayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */; };
@@ -49,6 +51,8 @@
 		A88DC57F21D8F7B000F5412B /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		A88DC58121D8FD7700F5412B /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		A88DC58321D9015A00F5412B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A88DC58521D913CD00F5412B /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		A88DC58721D918A500F5412B /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		A8A1E07E21D6631000CA3C08 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		A8A1E08021D667AE00CA3C08 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grobayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,7 @@
 				A800C09221C2A75000793008 /* LoginVC.swift */,
 				A8A1E07E21D6631000CA3C08 /* MeVC.swift */,
 				A8A1E08021D667AE00CA3C08 /* CreatePostVC.swift */,
+				A88DC58521D913CD00F5412B /* CreateGroupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				A800C09421C2A7C800793008 /* InsetTextField.swift */,
 				A800C09621C6A1F400793008 /* ShadowView.swift */,
 				A88DC58121D8FD7700F5412B /* FeedCell.swift */,
+				A88DC58721D918A500F5412B /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 				A84FB94E21C2923F007F4476 /* GroupVC.swift in Sources */,
 				A800C09921C6A36900793008 /* AuthService.swift in Sources */,
 				A84FB94A21C2923F007F4476 /* AppDelegate.swift in Sources */,
+				A88DC58821D918A500F5412B /* UserCell.swift in Sources */,
+				A88DC58621D913CD00F5412B /* CreateGroupVC.swift in Sources */,
 				A800C09721C6A1F400793008 /* ShadowView.swift in Sources */,
 				A8A1E08121D667AE00CA3C08 /* CreatePostVC.swift in Sources */,
 				A84FB94C21C2923F007F4476 /* FeedVC.swift in Sources */,
