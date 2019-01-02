@@ -29,6 +29,7 @@
 		A88DC58C21DCE57A00F5412B /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC58B21DCE57A00F5412B /* Group.swift */; };
 		A88DC58E21DCEB9F00F5412B /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC58D21DCEB9F00F5412B /* GroupFeedVC.swift */; };
 		A88DC59021DCEC7900F5412B /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC58F21DCEC7900F5412B /* GroupFeedCell.swift */; };
+		A88DC59221DD0DC700F5412B /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DC59121DD0DC700F5412B /* UIViewControllerExt.swift */; };
 		A8A1E07F21D6631000CA3C08 /* MeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A1E07E21D6631000CA3C08 /* MeVC.swift */; };
 		A8A1E08121D667AE00CA3C08 /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A1E08021D667AE00CA3C08 /* CreatePostVC.swift */; };
 		C206BD50F28F8C7215607FB3 /* Pods_Grobayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */; };
@@ -61,6 +62,7 @@
 		A88DC58B21DCE57A00F5412B /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		A88DC58D21DCEB9F00F5412B /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		A88DC58F21DCEC7900F5412B /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		A88DC59121DD0DC700F5412B /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		A8A1E07E21D6631000CA3C08 /* MeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeVC.swift; sourceTree = "<group>"; };
 		A8A1E08021D667AE00CA3C08 /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		AB1018DC53C3A7444940F838 /* Pods_Grobayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grobayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				A88DC57F21D8F7B000F5412B /* UIViewExt.swift */,
+				A88DC59121DD0DC700F5412B /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				A8A1E07F21D6631000CA3C08 /* MeVC.swift in Sources */,
 				A88DC58A21DCDEE300F5412B /* GroupCell.swift in Sources */,
 				A800C09121C2A73F00793008 /* AuthVC.swift in Sources */,
+				A88DC59221DD0DC700F5412B /* UIViewControllerExt.swift in Sources */,
 				A800C09321C2A75000793008 /* LoginVC.swift in Sources */,
 				A84FB94E21C2923F007F4476 /* GroupVC.swift in Sources */,
 				A800C09921C6A36900793008 /* AuthService.swift in Sources */,

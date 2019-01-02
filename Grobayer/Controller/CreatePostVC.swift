@@ -33,7 +33,7 @@ class CreatePostVC: UIViewController {
             DataService.instance.uploadPost(withMessage: textView.text, forUID: (Auth.auth().currentUser?.uid)!, withGroupKey: nil) { (isComplete) in
                 if isComplete {
                     self.sendBtn.isEnabled = true
-                    self.dismiss(animated: true, completion: nil)
+                    self.dismissDetail()
                 } else {
                     self.sendBtn.isEnabled = true
                     print("Error")
@@ -43,7 +43,7 @@ class CreatePostVC: UIViewController {
     }
     
     @IBAction func closeBtnWasPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetail()
     }
 }
 
