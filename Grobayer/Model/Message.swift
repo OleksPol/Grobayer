@@ -26,8 +26,6 @@ class Message {
         self._senderID = senderID
     }
     
-    
-    
 }
 
 

@@ -14,6 +14,8 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var emailLbl: UILabel!
     @IBOutlet weak var checkImage: UIImageView!
     
+    var showCheck = false
+    
     func configureCell(profileImage image: UIImage, email: String, isSelected: Bool) {
         self.profileImage.image = image
         self.emailLbl.text = email
@@ -23,6 +25,19 @@ class UserCell: UITableViewCell {
         } else {
             self.checkImage.isHidden = true
         }
-    
     }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        if selected {
+            if showCheck == false {
+                checkImage.isHidden = false
+                showCheck = true
+            } else {
+                checkImage.isHidden = true
+                showCheck = false
+            }
+        }
+    }
+    
 }
