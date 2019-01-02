@@ -28,7 +28,7 @@ class CreateGroupVC: UIViewController {
         emailSearchTextField.delegate = self
         emailSearchTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
-   
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         doneBtn.isHidden = true
@@ -109,6 +109,4 @@ extension CreateGroupVC: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-extension CreateGroupVC: UITextFieldDelegate {
-    
-}
+extension CreateGroupVC: UITextFieldDelegate {}

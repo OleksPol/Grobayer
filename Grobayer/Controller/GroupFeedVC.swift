@@ -14,7 +14,7 @@ class GroupFeedVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var groupTitleLbl: UILabel!
     @IBOutlet weak var memberLbl: UILabel!
-    @IBOutlet weak var sendBnView: UIView!
+    @IBOutlet weak var sendBtnView: UIView!
     @IBOutlet weak var messageTextField: InsetTextField!
     @IBOutlet weak var sendBtn: UIButton!
     
@@ -29,7 +29,7 @@ class GroupFeedVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        sendBnView.bindToKeyboard()
+        messageTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,7 +49,6 @@ class GroupFeedVC: UIViewController {
                 }
             })
         }
-        
     }
     
     @IBAction func backBtnWasPressed(_ sender: Any) {
@@ -60,13 +59,13 @@ class GroupFeedVC: UIViewController {
         if messageTextField.text != "" {
             messageTextField.isEnabled = false
             sendBtn.isEnabled = false
-            DataService.instance.uploadPost(withMessage: messageTextField.text!, forUID: Auth.auth().currentUser!.uid, withGroupKey: group?.groupKey) { (complete) in
+            DataService.instance.uploadPost(withMessage: messageTextField.text!, forUID: Auth.auth().currentUser!.uid, withGroupKey: group?.groupKey, sendComplete: { (complete) in
                 if complete {
                     self.messageTextField.text = ""
                     self.messageTextField.isEnabled = true
                     self.sendBtn.isEnabled = true
                 }
-            }
+            })
         }
     }
     
@@ -91,4 +90,32 @@ extension GroupFeedVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+}
+
+
+extension GroupFeedVC: UITextFieldDelegate {
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -250, up: true)
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        moveTextField(textField, moveDistance: -250, up: false)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
+        let moveDuration = 0.3
+        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
+        
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(moveDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
+    }
 }

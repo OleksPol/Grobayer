@@ -52,7 +52,7 @@
                                     <constraint firstItem="bpw-15-qDi" firstAttribute="centerY" secondItem="3My-fG-CDU" secondAttribute="centerY" id="x7Q-Kd-STR"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mH6-sl-5pC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mH6-sl-5pC">
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -284,7 +284,7 @@
                                     <constraint firstAttribute="trailing" secondItem="vVJ-Wy-dHF" secondAttribute="trailing" constant="19" id="i1L-UD-OxI"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-oV-Jlx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-oV-Jlx">
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -431,7 +431,7 @@
                                     <constraint firstItem="Su0-au-GZI" firstAttribute="centerX" secondItem="E30-Ma-3Og" secondAttribute="centerX" id="yJH-nJ-5jn"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DwK-i2-yLM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DwK-i2-yLM">
                                 <rect key="frame" x="0.0" y="345" width="375" height="273"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -513,8 +513,8 @@
                                     <constraint firstItem="Ve0-dh-lPX" firstAttribute="centerX" secondItem="wXh-vr-XRW" secondAttribute="centerX" id="wUi-NJ-TQ3"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CRW-bE-9Tl">
-                                <rect key="frame" x="0.0" y="108" width="375" height="491"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CRW-bE-9Tl">
+                                <rect key="frame" x="0.0" y="108" width="375" height="498"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupFeedCell" rowHeight="100" id="4wo-ro-KCp" customClass="GroupFeedCell" customModule="Grobayer" customModuleProvider="target">
@@ -579,7 +579,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nek-w9-2rw">
                                 <rect key="frame" x="0.0" y="607" width="375" height="60"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="send message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TKC-TJ-liC" customClass="InsetTextField" customModule="Grobayer" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="send a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TKC-TJ-liC" customClass="InsetTextField" customModule="Grobayer" customModuleProvider="target">
                                         <rect key="frame" x="15" y="15" width="307" height="30"/>
                                         <color key="backgroundColor" red="0.16078431369999999" green="0.15686274510000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -614,18 +614,18 @@
                         <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Nek-w9-2rw" firstAttribute="bottom" secondItem="sLx-WO-GTd" secondAttribute="bottom" id="2rv-Zm-Hcc"/>
-                            <constraint firstItem="CRW-bE-9Tl" firstAttribute="top" secondItem="syS-dc-uBq" secondAttribute="bottom" constant="8" id="6Gc-po-Zew"/>
                             <constraint firstItem="Nek-w9-2rw" firstAttribute="leading" secondItem="sLx-WO-GTd" secondAttribute="leading" id="7wc-GS-szg"/>
                             <constraint firstItem="wXh-vr-XRW" firstAttribute="trailing" secondItem="sLx-WO-GTd" secondAttribute="trailing" id="80a-xu-N05"/>
                             <constraint firstItem="syS-dc-uBq" firstAttribute="leading" secondItem="sLx-WO-GTd" secondAttribute="leading" id="E7F-Qi-aeo"/>
-                            <constraint firstItem="CRW-bE-9Tl" firstAttribute="leading" secondItem="sLx-WO-GTd" secondAttribute="leading" id="KbB-9s-4wi"/>
+                            <constraint firstItem="CRW-bE-9Tl" firstAttribute="top" secondItem="syS-dc-uBq" secondAttribute="bottom" constant="8" id="Jkg-iT-h3F"/>
                             <constraint firstItem="wXh-vr-XRW" firstAttribute="leading" secondItem="sLx-WO-GTd" secondAttribute="leading" id="LEL-2n-euK"/>
                             <constraint firstItem="sLx-WO-GTd" firstAttribute="trailing" secondItem="syS-dc-uBq" secondAttribute="trailing" id="RNo-o4-DXg"/>
+                            <constraint firstItem="Nek-w9-2rw" firstAttribute="top" secondItem="CRW-bE-9Tl" secondAttribute="bottom" constant="1" id="TyH-14-JJv"/>
                             <constraint firstItem="syS-dc-uBq" firstAttribute="top" secondItem="wXh-vr-XRW" secondAttribute="bottom" constant="8" id="Vjq-fg-2Zl"/>
-                            <constraint firstItem="Nek-w9-2rw" firstAttribute="top" secondItem="CRW-bE-9Tl" secondAttribute="bottom" constant="8" id="X5b-Jn-CKN"/>
-                            <constraint firstItem="CRW-bE-9Tl" firstAttribute="trailing" secondItem="sLx-WO-GTd" secondAttribute="trailing" id="YCS-ko-jbN"/>
+                            <constraint firstItem="CRW-bE-9Tl" firstAttribute="leading" secondItem="sLx-WO-GTd" secondAttribute="leading" id="XXB-lJ-itx"/>
                             <constraint firstItem="wXh-vr-XRW" firstAttribute="top" secondItem="AQL-py-T4u" secondAttribute="top" id="fap-99-2pj"/>
                             <constraint firstItem="Nek-w9-2rw" firstAttribute="trailing" secondItem="sLx-WO-GTd" secondAttribute="trailing" id="rfN-0Q-bTt"/>
+                            <constraint firstItem="CRW-bE-9Tl" firstAttribute="trailing" secondItem="sLx-WO-GTd" secondAttribute="trailing" id="vn8-oJ-aeu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sLx-WO-GTd"/>
                     </view>
@@ -633,8 +633,8 @@
                         <outlet property="groupTitleLbl" destination="Ve0-dh-lPX" id="Mic-rE-Xxi"/>
                         <outlet property="memberLbl" destination="syS-dc-uBq" id="QjQ-QR-3Lj"/>
                         <outlet property="messageTextField" destination="TKC-TJ-liC" id="NKz-eC-eEf"/>
-                        <outlet property="sendBnView" destination="Nek-w9-2rw" id="daT-MB-uge"/>
                         <outlet property="sendBtn" destination="S6Q-s5-TwC" id="pyL-RF-TRT"/>
+                        <outlet property="sendBtnView" destination="Nek-w9-2rw" id="daT-MB-uge"/>
                         <outlet property="tableView" destination="CRW-bE-9Tl" id="iWI-LE-r5y"/>
                     </connections>
                 </viewController>
@@ -751,7 +751,7 @@
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zUS-kj-bWu">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zUS-kj-bWu">
                                         <rect key="frame" x="0.0" y="222.5" width="335" height="334.5"/>
                                         <color key="backgroundColor" red="0.16078431372549018" green="0.15686274509803921" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
@@ -759,7 +759,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="335" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BdP-cg-al9" id="Sru-y5-RQJ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="Fmn-GP-i4J">
